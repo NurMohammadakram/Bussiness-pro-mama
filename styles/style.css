@@ -1,0 +1,139 @@
+/* google font importing link below */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #3A3A3A;
+    --btn-primary-color: #E02C6D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    color: var(--primary-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+nav ul li:hover a {
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+nav ul li a {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                Home section start from here
+                check below the code
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$444*/
+
+.home {
+    display: flex;
+    gap: 10rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.home img {
+    width: 100%;
+    height: 100%;
+    max-width: 440px;
+    max-height: 414px;
+}
+.home_info_title {
+    font-size: 3.25rem;
+    line-height: 70px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.home_info_subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home button {
+    background-color: var(--btn-primary-color);
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 8px 15px;
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    nav {
+        padding: 0 20px 0 35px;
+    }
+    .home {
+        gap: 3rem
+    }
+    .home_info {
+        padding-left: 35px;
+    }
+    .home_info_title {
+        font-size: 40px;
+        line-height: 52px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    nav {
+        margin-top: 35px;
+        justify-content: center;
+    }
+    nav .logo {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    nav ul {
+        display: none;
+    }
+    .home {
+        flex-direction: column-reverse;
+        padding-top: 22px;
+        padding-bottom: 50px;
+        gap: 14px;
+    }
+    .home_info {
+        text-align: center;
+        padding: 0 10px;
+    }
+    .home_info_title {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .home img {
+        width: 257px;
+        height: 257px;
+    }
+}
+
+
