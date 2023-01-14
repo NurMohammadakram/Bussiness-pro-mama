@@ -86,9 +86,15 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$444*/
     color: #ffffff;
     border-radius: 30px;
     padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    align-items: center;
 }
 button i {
     color: #ffffff;
+    padding-left: 10px;
+    font-size: 18px;
 }
 /* ------------------------------------------------------------------------------------
                             Home section end
@@ -173,6 +179,16 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     .companys {
         flex-wrap: wrap;
         gap: 25px;
+    }
+    .product-carts {
+        max-width: 700px;
+    }
+    .carts {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px;
+    }
+    .cart {
+        max-width: 300px;
     }
 }
 @media only screen and (max-width: 576px) {
