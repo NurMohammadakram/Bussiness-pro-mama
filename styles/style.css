@@ -87,6 +87,73 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$444*/
     border-radius: 30px;
     padding: 8px 15px;
 }
+button i {
+    color: #ffffff;
+}
+/* ------------------------------------------------------------------------------------
+                            Home section end
+---------------------------------------------------------------------------------------- */
+
+
+/* ###################################################################################
+                        company section start here
+###################################################################################### */
+.company-section {
+    margin-bottom: 100px;
+}
+.line {
+    width: 100%;
+    border-top: 2px solid #3A3A3A;
+    opacity: 0.3;
+}
+
+.companys {
+    display: flex;
+    margin: 36px 20px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+.companys img {
+    width: 80%;
+    max-width: 100px;
+    padding: 0 10px;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                            product Cart section styles 
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+.product-carts{
+    width: 100%;
+    max-width: 1047px;
+    margin-bottom: 100px;
+}
+.product-carts h2 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 70px;
+}
+.carts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.cart {
+    padding: 14px;
+    box-shadow: 1px 1px 5px #3A3A3A;
+}
+.cart img {
+    width: 100%;
+    max-width: 300px;
+    height: 256px;
+}
+.cart .title {
+    font-size: 28px;
+    font-weight: 500;
+}
+.cart i {
+    color: #FB8200;
+}
 
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
@@ -102,6 +169,10 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$444*/
     .home_info_title {
         font-size: 40px;
         line-height: 52px;
+    }
+    .companys {
+        flex-wrap: wrap;
+        gap: 25px;
     }
 }
 @media only screen and (max-width: 576px) {
@@ -133,6 +204,27 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$444*/
     .home img {
         width: 257px;
         height: 257px;
+    }
+    .company-section {
+        margin-bottom: 50px;
+    }
+    .companys {
+        flex-wrap: wrap;
+        gap: 0;
+        margin: 15px 15px;
+    }
+    .companys img {
+        padding: 10px 5px;
+        width: 18%;
+        max-width: 80px;
+    }
+    .carts {
+        grid-template-columns: 1fr;
+        margin: 0 15px;
+        row-gap: 15px;
+    }
+    .cart .title {
+        font-weight: 700;
     }
 }
 
